@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultorio médico</title>
+    <!--llamar una hoja de estilos de otro archivo (recomendado)-->
+    <link rel="stylesheet" href="estilo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!--crear estilos dentro de la misma pagina-->
+    
+</head>
+<body>
+    <!--Cajas-->
+    <div class="caja-principal">
+
+        <center>
+        <div class="caja-logo">
+            <img src="Imágenes\logo consultorio médico.png"  alt="Consultorio médico" width="240" height="117px"/>
+        </div>
+        </center>
+
+
+        
+    </div>
+
+    
+    
+    <main>
+        <br /><br />
+        <center>
+            <h1>Diligencie los siguientes datos para ingresar a la página</h1>
+            <br /><br />
+            <form>
+                <!--Se creo un estilo sobre la etiqueta label-->
+                <label class="label-form" id="usuario" for="txt_usuario">Ingrese su usuario</label>
+                <input class="input-form" id="txt_usuario" type="text"  required="true"  />
+                <br /><br />
+                <label class="label-form"  id="contraseña" for="txt_contraseña">Ingrese su contraseña</label>
+                <input class="input-form" id="txt_contraseña" type="text"  required="true"     />
+
+            
+
+
+                <center>
+                <br/><br/>
+                <label id="captcha">Recordar datos de ingreso</label>
+                <input type="checkbox" name="guardar_datos" value="Guardar"/>
+
+                </input>
+                <br /><br />
+            </center>
+                <center>
+       
+                <input class="boton-form" type="submit" value="Ingresar" />
+            </center>
+            </form>
+            <!--Crear una tabla-->
+
+            
+        </center>
+
+
+    </main>
+
+
+
+    <br /><br /><br /><br />
+
+
+    <footer>
+
+        <div class="logoo">
+            <img src="Imágenes\logo simple.png" alt="logo" height="115px" >
+        </div>
+        <div class="enlaces">
+            <h4>CONTACTO</h4>
+            <p>Dirección: Diagonal 87 # 65 oeste</p>
+            <p>Teléfono: 1875333</p>
+            <p>Facebook</p>
+        </div>
+        <div class="redes-sociales">
+            <h4>Equipo de desarrollo</h4>
+            <p> Mauricio Torres <br>
+                Gabriel Diaz León <br>
+                Sammir Saavedra<br>
+              </p>
+
+        </div>
+        <div class="proyecto">
+            <h4>DESCRIPCION DEL PROYECTO</h4>
+            <p>Salud primero es un consultorio médico con 50 años de experiencia en la atención al usuario, que ofrece distintos  servicios de salud para la comunidad.</p>
+
+        </div>
+    </footer>
+</body>
+</html>
