@@ -48,187 +48,74 @@
     <main>
         <br /><br />
         <center>
-            <h1>Diligencie los siguientes datos</h1>
+            <h1>Atención al usuario</h1>
+            <br /><br />
             <form>
                 <!--Se creo un estilo sobre la etiqueta label-->
-                <label class="label-form" id="label_nombre_libro" for="nombre_libro">Ingresar nombres</label>
-                <input class="input-form" id="nombre_libro" type="text"  required="true"  />
+
+                <label class="label-form" id="nombre_paciente" for="txt_nombre">Nombre del paciente</label>
+                <input class="input-form" id="txt_nombre" type="text"  required="true"  />
                 <br /><br />
-                <label class="label-form"  id="label_publicacion" for="publicacion">Año publicacion</label>
-                <input class="input-form" id="publicacion" type="number"  required="true"   maxlength="4"  />
+
+                <label class="label-form"  id="label_publicacion" for="publicacion">Cédula del paciente</label>
+                <input class="input-form" id="publicacion" type="number"  required="true"   minlength="999999999"  />
                 <br /><br />
-                <label class="label-form"  id="label_correo" for="correo">Correo electronico</label>
-                <input class="input-form" id="correo" type="email"    />
-                <br /><br />
-                <label class="label-form"  id="label_estado" for="estado">Estado Libro</label>
-                <select class="input-form select-form"  id="estado">
-                    <option value="1">En reparacion</option>
-                    <option value="2">Prestado</option>
-                    <option value="3" selected>Disponible</option>
+
+                <label class="label-form"  id="label_regimen" for="txt_regimen">Régimen</label>
+                <select class="input-form select-form"  id="txt_regimen">
+                    <option value="1" selected><Select:disabled></Select:disabled></option>
+                    <option value="2">Subsidiado</option>
+                    <option value="3" >Contributivo</option>
                 </select>
                 <br /><br />
-                <label class="label-form" id="fecha" for="fecha">Fecha</label>
-                <input class="input-form" class="input-form" type="date" id="fecha" />
-                <br /><br />
-                <label class="label-form" id="observaciones" for="observaciones">Observaciones</label>
-                <textarea class="input-form" id="observaciones" cols="50" rows="5" required></textarea>
-                <br /><br />
-                <label class="label-form"  id="genero">Genero</label>
-                <label id="Masculino">Masculino</label>
-                <input type="radio" name="genero" value="Masculino">
-                <label id="Femenino">Femenino</label>
-                <input type="radio" name="genero" value="femenino">
-                <br /><br />
-                <label class="label-form"  id="materias" for="materias">Ingresar Materias:</label>
-                <label id="Matematicas">Matematicas</label>
-                <input type="checkbox" name="materias" value="matematicas"/>
-                <label id="Quimica">Quimica</label>
-                <input type="checkbox" name="materias" value="quimica"/>
-                <label id="Fisica">Fisica</label>
-                <input type="checkbox" name="materias" value="fisica"/>
 
-                </input>
+                <label class="label-form" id="fecha" for="txt_fecha">Fecha de la cita</label>
+                <input class="input-form" class="input-form" type="date" id="txt_fecha" />
                 <br /><br />
-                <input class="boton-form" type="submit" value="Cancelar" />
+
+                <label class="label-form" id="antecedentes" for="txt_antecedentes">Novedades en antecedentes</label>
+                <textarea class="input-form" id="txt_antecedentes" cols="50" rows="2" required></textarea>
+                <br /><br />
+
+                <label class="label-form" id="razon_consulta" for="txt_razon_consulta">Razón de consulta</label>
+                <textarea class="input-form" id="txt_razon_consulta" cols="50" rows="2" required></textarea>
+                <br /><br />
+
+                <label class="label-form" id="diagnostico" for="txt_diagnostico">Diagnóstico</label>
+                <textarea class="input-form" id="txt_diagnostico" cols="50" rows="2" required></textarea>
+                <br /><br />
+
+                <br /><br />
+
+                <center>
+                <label id="medicamentos">¿Se formulan medicamentos?</label>
+                <input type="checkbox" name="medicamentos" value="medicamentos"/>
+
+                </center>
+
+                <br /><br />
+
+                <label class="label-form" id="nombre_medicamento" for="txt_nombre">Nombre del medicamento</label>
+                <input class="input-form" id="txt_nombre_medicamento" type="text"  required="true"  />
+                <br /><br />
+
+                
+                <label class="label-form" id="cantidad" for="txt_cantidad">Cantidad</label>
+                <input class="input-form" id="txt_cantidad" type="number"  required="true"  />
+
+                <br /><br />
+                <br /><br />
+                <center>
                 <input class="boton-form" type="submit" value="Guardar" />
+         </center>
+
+
+
             </form>
-            <!--Crear una tabla-->
-            <br /><br />
-            <table class="estilo-tabla" align="center" border="2" width="200px">
-                <tr>
-                    <th></th>
-                    <th>LUNES</th>
-                    <th>MARTES</th>
-                    <th>MIERCOLES</th>
-                    <th>JUEVES</th>
-                    <th>VIERNES</th>
-                </tr>
-                <tr>
-                    <td>8-10</td>
-                    <td>Quimica</td>
-                    <td>Fisica</td>
-                    <td>Español</td>
-                    <td>Idiomas</td>
-                    <td>Matematicas</td>
-                </tr>
-                <tr>
-                    <td>10-12</td>
-                    <td>Quimica</td>
-                    <td>Fisica</td>
-                    <td>Español</td>
-                    <td>Idiomas</td>
-                    <td>Matematicas</td>
-                </tr>
-            </table>
-            <br /><br />
-
-        </center>
-
-
+        
     </main>
 
-    <!--crear div dentro de div-->
-    <div id="caja-publicidad">
-        <div id="caja-publicidad1">
-            <div id="caja-superior">
-                <div id="caja-superior1">
-                    <h3>Attraction</h3>
-                </div>
-                <div id="caja-superior2">
-                    
-                    <span class="material-symbols-outlined">
-                        beach_access
-                    </span>
-                </div>
-
-            </div>
-            <div id="caja-media">
-                <div id="caja-media1">
-                    <p>parrafo1</p>
-                    <p>parrafo2</p>
-                    <p>parrafo3</p>
-
-                </div>
-                <div id="caja-media2">
-                    <p>parrafo4</p>
-                    <p>parrafo5</p>
-                    <p>parrafo6</p>
-
-                </div>
-            </div>
-            <div id="caja-inferior">
-                <button class="boton1">More to see</button>
-            </div>
-
-        </div>
-        <div id="caja-publicidad2">
-
-            <div id="caja-superior">
-                <div id="caja-superior1">
-                    <h3>Attraction</h3>
-                </div>
-                <div id="caja-superior2">
-                    
-                    <span class="material-symbols-outlined">
-                        beach_access
-                    </span>
-                </div>
-
-            </div>
-            <div id="caja-media">
-                <div id="caja-media1">
-                    <p>parrafo1</p>
-                    <p>parrafo2</p>
-                    <p>parrafo3</p>
-
-                </div>
-                <div id="caja-media2">
-                    <p>parrafo4</p>
-                    <p>parrafo5</p>
-                    <p>parrafo6</p>
-
-                </div>
-            </div>
-            <div id="caja-inferior">
-                <button class="boton1">More to see</button>
-            </div>
-
-        </div>
-        <div id="caja-publicidad3">
-
-            <div id="caja-superior">
-                <div id="caja-superior1">
-                    <h3>Attraction</h3>
-                </div>
-                <div id="caja-superior2">
-                    
-                    <span class="material-symbols-outlined">
-                        beach_access
-                    </span>
-                </div>
-
-            </div>
-            <div id="caja-media">
-                <div id="caja-media1">
-                    <p>parrafo1</p>
-                    <p>parrafo2</p>
-                    <p>parrafo3</p>
-
-                </div>
-                <div id="caja-media2">
-                    <p>parrafo4</p>
-                    <p>parrafo5</p>
-                    <p>parrafo6</p>
-
-                </div>
-            </div>
-            <div id="caja-inferior">
-                <button class="boton1">More to see</button>
-            </div>
-
-        </div>
-
-    </div>
+   
 
 
 
@@ -239,23 +126,25 @@
     <footer>
 
         <div class="logoo">
-            <img src="Imágenes\logo simple.png" alt="logo" height="180px" >
-            
+            <img src="Imágenes\logo simple.png" alt="logo" height="115px" >
         </div>
         <div class="enlaces">
-            <h4>ENLACES</h4>
-            <p>Nosotros</p>
-            <p>Contacto</p>
-            <p>Mapa del sitio</p>
-            <p>Blog</p>
+            <h4>CONTACTO</h4>
+            <p>Dirección: Diagonal 87 # 65 oeste</p>
+            <p>Teléfono: 1875333</p>
+            <p>Facebook</p>
         </div>
         <div class="redes-sociales">
-            <h4>REDES SOCIALES</h4>
+            <h4>Equipo de desarrollo</h4>
+            <p> Mauricio Torres <br>
+                Gabriel Diaz León <br>
+                Sammir Saavedra<br>
+              </p>
 
         </div>
         <div class="proyecto">
             <h4>DESCRIPCION DEL PROYECTO</h4>
-            <p>texto con la descripcion proyecto</p>
+            <p>Salud primero es un consultorio médico con 50 años de experiencia en la atención al usuario, que ofrece distintos  servicios de salud para la comunidad.</p>
 
         </div>
     </footer>
